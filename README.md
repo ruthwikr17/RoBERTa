@@ -1,11 +1,11 @@
 **Sarcasm Detection with Transformer Models**  
-This project explores sarcasm detection in text by fine-tuning various Transformer models. It includes scripts to train, evaluate, and compare the performance of BERT, RoBERTa, and GPT-2 using PyTorch and the Hugging Face Transformers library.  
+This project explores sarcasm detection in text by fine-tuning various Transformer models. It includes scripts to train, evaluate, and compare the performance of BERT, RoBERTa, and GPT-2 using PyTorch and the Hugging Face Transformers library.<br>  
 
 **Project Overview**  
 The primary goal of this project is to build and evaluate robust classifiers for detecting sarcasm in textual data. The project provides a framework for:  
 	•	Fine-tuning individual models like BERT and RoBERTa on a sarcasm dataset.  
 	•	Evaluating the performance of trained models using standard classification metrics.  
-	•	Conducting a comparative analysis to determine which model architecture performs best on this specific task.  
+	•	Conducting a comparative analysis to determine which model architecture performs best on this specific task.  <br>
 
 
 **Tech Stack & Key Components**  
@@ -25,7 +25,7 @@ The primary goal of this project is to build and evaluate robust classifiers for
 **- Datasets**  
 	•	Data/sarcasm_dataset.csv: The primary dataset used for training the models.  
 	•	Data/test_dataset 2.csv: A test set used exclusively by metrics.py for model comparison.  
-	•	Data/test_dataset 3.csv: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  
+	•	Data/test_dataset 3.csv: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  <br>
 
 
 **Project Structure**  
@@ -40,24 +40,23 @@ RoBERTa-Sarcasm-Project/
 ├── TestRoberta.py  
 ├── metrics.py  
 ├── Cleanup.py  
-└── README.md  
+└── README.md  <br>
 
 
 **Getting Started**  
-**Requirements**  
+**- Requirements**  
 	•	Python 3.8+  
 	•	Git  
 
-**Installation & Setup**  
+**- Installation & Setup**  
 	1	**Clone the repository**:  git clone https://github.com/YourUsername/YourRepositoryName.git  
                                cd YourRepositoryName   
 	2	**Create a virtual environment (recommended)**:  python -m venv venv  
           	                                     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`  
-	3	**Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  
+	3	**Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  <br>
 
 
 **Workflow and Usage**  
-
 This project provides two distinct workflows: one for building a specific, usable model, and another for conducting a comparative experiment.  
 
 **Individual Model Scripts** (Bert.py,  RoBERTa.py, etc.)  
@@ -66,7 +65,7 @@ This project provides two distinct workflows: one for building a specific, usabl
 
 **Metrics Comparison Script** (metrics.py)  
 	•	Purpose: This script is an experimental testbed designed to answer the question: "Which model architecture is best for this specific task?"  
-	•	Workflow: It trains BERT, RoBERTa, and GPT-2 from scratch under the same conditions and directly compares their performance metrics. Its goal is not to save a final model for later use, but to generate a comparative analysis to inform which architecture you might choose to build with the individual scripts.  
+	•	Workflow: It trains BERT, RoBERTa, and GPT-2 from scratch under the same conditions and directly compares their performance metrics. Its goal is not to save a final model for later use, but to generate a comparative analysis to inform which architecture you might choose to build with the individual scripts.  <br>
 
 
 **Future Additions**  
