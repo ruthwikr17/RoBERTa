@@ -3,29 +3,29 @@ This project explores sarcasm detection in text by fine-tuning various Transform
 
 **Project Overview**  
 The primary goal of this project is to build and evaluate robust classifiers for detecting sarcasm in textual data. The project provides a framework for:  
-	• Fine-tuning individual models like BERT and RoBERTa on a sarcasm dataset.  
-	• Evaluating the performance of trained models using standard classification metrics.  
-	• Conducting a comparative analysis to determine which model architecture performs best on this specific task.  <br><br>
+		• Fine-tuning individual models like BERT and RoBERTa on a sarcasm dataset.  
+		• Evaluating the performance of trained models using standard classification metrics.  
+		• Conducting a comparative analysis to determine which model architecture performs best on this specific task.  <br><br>
 
 
 **Tech Stack & Key Components**  
 **- Models**  
-	• **BERT (bert-base-uncased)**: A powerful bidirectional transformer model.  
-	• **RoBERTa (roberta-base)**: A robustly optimized version of BERT with improved training methodology.  
-	• **GPT-2 (gpt2)**: A generative transformer model, also adaptable for classification tasks.  
+		• **BERT (bert-base-uncased)**: A powerful bidirectional transformer model.  
+		• **RoBERTa (roberta-base)**: A robustly optimized version of BERT with improved training methodology.  
+		• **GPT-2 (gpt2)**: A generative transformer model, also adaptable for classification tasks.  
 
 **- Libraries & Frameworks**  
-	• **PyTorch**: The core deep learning framework.  
-	• **Hugging Face transformers**: For accessing pre-trained models and using the Trainer API.  
-	• **Hugging Face datasets**: For handling and processing datasets efficiently.  
-	• **Scikit-learn**: For performance metrics (accuracy, precision, recall, F1-score) and data splitting.  
-	• **Pandas**: For data manipulation and loading CSV files.  
-	• **Matplotlib & Seaborn**: For creating visualizations of model performance.  
+		• **PyTorch**: The core deep learning framework.  
+		• **Hugging Face transformers**: For accessing pre-trained models and using the Trainer API.  
+		• **Hugging Face datasets**: For handling and processing datasets efficiently.  
+		• **Scikit-learn**: For performance metrics (accuracy, precision, recall, F1-score) and data splitting.  
+		• **Pandas**: For data manipulation and loading CSV files.  
+		• **Matplotlib & Seaborn**: For creating visualizations of model performance.  
 
 **- Datasets**  
-	• **Data/sarcasm_dataset.csv**: The primary dataset used for training the models.  
-	• **Data/test_dataset 2.csv**: A test set used exclusively by metrics.py for model comparison.  
-	• **Data/test_dataset 3.csv**: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  <br><br>
+		• **Data/sarcasm_dataset.csv**: The primary dataset used for training the models.  
+		• **Data/test_dataset 2.csv**: A test set used exclusively by metrics.py for model comparison.  
+		• **Data/test_dataset 3.csv**: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  <br><br>
 
 
 **Project Structure**  <br><br>
@@ -45,15 +45,15 @@ RoBERTa-Sarcasm-Project/
 
 **Getting Started**  
 **- Requirements**  
-	• Python 3.8+  
-	• Git  
+		• Python 3.8+  
+		• Git  
 
 **- Installation & Setup**  
-	1 **Clone the repository**:  git clone https://github.com/YourUsername/YourRepositoryName.git  
+		1 **Clone the repository**:  git clone https://github.com/YourUsername/YourRepositoryName.git  
                                cd YourRepositoryName   <br>
-	2 **Create a virtual environment (recommended)**:  python -m venv venv  
+		2 **Create a virtual environment (recommended)**:  python -m venv venv  
           	                                     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`  
-	3 **Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  <br><br>
+		3 **Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  <br><br>
 
 
 **Workflow and Usage**  
