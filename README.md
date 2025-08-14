@@ -1,4 +1,4 @@
-**Sarcasm Detection with Transformer Models*
+**Sarcasm Detection with Transformer Models**
 This project explores sarcasm detection in text by fine-tuning various Transformer models. It includes scripts to train, evaluate, and compare the performance of BERT, RoBERTa, and GPT-2 using PyTorch and the Hugging Face Transformers library.
 
 **Project Overview**
