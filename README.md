@@ -28,7 +28,7 @@ The primary goal of this project is to build and evaluate robust classifiers for
 	•	Data/test_dataset 3.csv: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  <br><br>
 
 
-**Project Structure**  
+**Project Structure**  <br>
 RoBERTa-Sarcasm-Project/  
 ├── Data/  
 │   ├── sarcasm_dataset.csv  
@@ -50,7 +50,7 @@ RoBERTa-Sarcasm-Project/
 
 **- Installation & Setup**  
 	1	**Clone the repository**:  git clone https://github.com/YourUsername/YourRepositoryName.git  
-                               cd YourRepositoryName   
+                               cd YourRepositoryName   <br>
 	2	**Create a virtual environment (recommended)**:  python -m venv venv  
           	                                     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`  
 	3	**Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  <br><br>
@@ -59,18 +59,18 @@ RoBERTa-Sarcasm-Project/
 **Workflow and Usage**  
 This project provides two distinct workflows: one for building a specific, usable model, and another for conducting a comparative experiment.  
 
-**Individual Model Scripts** (Bert.py,  RoBERTa.py, etc.)  
+**- Individual Model Scripts** (Bert.py,  RoBERTa.py, etc.)  
 	•	Purpose: These scripts are for the end-to-end process of building a single, deployable model.  
 	•	Workflow: You run RoBERTa.py to train the model and save the final version. You then use TestRoberta.py to evaluate that specific saved model and use it for predictions. This simulates a production-like pipeline where you create a tool and then test it.  
 
-**Metrics Comparison Script** (metrics.py)  
+**- Metrics Comparison Script** (metrics.py)  
 	•	Purpose: This script is an experimental testbed designed to answer the question: "Which model architecture is best for this specific task?"  
 	•	Workflow: It trains BERT, RoBERTa, and GPT-2 from scratch under the same conditions and directly compares their performance metrics. Its goal is not to save a final model for later use, but to generate a comparative analysis to inform which architecture you might choose to build with the individual scripts.  <br><br>
 
 
 **Future Additions**  
 Potential improvements and future directions for this project include:  
-	1	Hyperparameter Tuning: Integrating tools like Optuna or Ray Tune to find the optimal hyperparameters for training.  
-	2	Expanded Model Comparison: Including newer architectures like DeBERTa, ELECTRA, or XLNet in the metrics.py comparison script.  
-	3	Web Interface: Building a simple front-end with Streamlit or Gradio to make the sarcasm prediction tool more user-friendly.   
+1. Hyperparameter Tuning: Integrating tools like Optuna or Ray Tune to find the optimal hyperparameters for training.  
+2. Expanded Model Comparison: Including newer architectures like DeBERTa, ELECTRA, or XLNet in the metrics.py comparison script.  
+3. Web Interface: Building a simple front-end with Streamlit or Gradio to make the sarcasm prediction tool more user-friendly.   
 
