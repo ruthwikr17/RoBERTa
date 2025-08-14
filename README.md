@@ -1,11 +1,11 @@
 **Sarcasm Detection with Transformer Models**  
-This project explores sarcasm detection in text by fine-tuning various Transformer models. It includes scripts to train, evaluate, and compare the performance of BERT, RoBERTa, and GPT-2 using PyTorch and the Hugging Face Transformers library.<br>  
+This project explores sarcasm detection in text by fine-tuning various Transformer models. It includes scripts to train, evaluate, and compare the performance of BERT, RoBERTa, and GPT-2 using PyTorch and the Hugging Face Transformers library.<br><br>  
 
 **Project Overview**  
 The primary goal of this project is to build and evaluate robust classifiers for detecting sarcasm in textual data. The project provides a framework for:  
 	•	Fine-tuning individual models like BERT and RoBERTa on a sarcasm dataset.  
 	•	Evaluating the performance of trained models using standard classification metrics.  
-	•	Conducting a comparative analysis to determine which model architecture performs best on this specific task.  <br>
+	•	Conducting a comparative analysis to determine which model architecture performs best on this specific task.  <br><br>
 
 
 **Tech Stack & Key Components**  
@@ -25,7 +25,7 @@ The primary goal of this project is to build and evaluate robust classifiers for
 **- Datasets**  
 	•	Data/sarcasm_dataset.csv: The primary dataset used for training the models.  
 	•	Data/test_dataset 2.csv: A test set used exclusively by metrics.py for model comparison.  
-	•	Data/test_dataset 3.csv: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  <br>
+	•	Data/test_dataset 3.csv: A test set used by the individual evaluation scripts (TestBert.py and TestRoberta.py).  <br><br>
 
 
 **Project Structure**  
@@ -40,7 +40,7 @@ RoBERTa-Sarcasm-Project/
 ├── TestRoberta.py  
 ├── metrics.py  
 ├── Cleanup.py  
-└── README.md  <br>
+└── README.md  <br><br>
 
 
 **Getting Started**  
@@ -53,7 +53,7 @@ RoBERTa-Sarcasm-Project/
                                cd YourRepositoryName   
 	2	**Create a virtual environment (recommended)**:  python -m venv venv  
           	                                     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`  
-	3	**Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  <br>
+	3	**Install the required packages**:  pip install torch transformers datasets pandas scikit-learn matplotlib seaborn  <br><br>
 
 
 **Workflow and Usage**  
@@ -65,12 +65,12 @@ This project provides two distinct workflows: one for building a specific, usabl
 
 **Metrics Comparison Script** (metrics.py)  
 	•	Purpose: This script is an experimental testbed designed to answer the question: "Which model architecture is best for this specific task?"  
-	•	Workflow: It trains BERT, RoBERTa, and GPT-2 from scratch under the same conditions and directly compares their performance metrics. Its goal is not to save a final model for later use, but to generate a comparative analysis to inform which architecture you might choose to build with the individual scripts.  <br>
+	•	Workflow: It trains BERT, RoBERTa, and GPT-2 from scratch under the same conditions and directly compares their performance metrics. Its goal is not to save a final model for later use, but to generate a comparative analysis to inform which architecture you might choose to build with the individual scripts.  <br><br>
 
 
 **Future Additions**  
-	1	Potential improvements and future directions for this project include:  
-	2	Hyperparameter Tuning: Integrating tools like Optuna or Ray Tune to find the optimal hyperparameters for training.  
-	3	Expanded Model Comparison: Including newer architectures like DeBERTa, ELECTRA, or XLNet in the metrics.py comparison script.  
-	4	Web Interface: Building a simple front-end with Streamlit or Gradio to make the sarcasm prediction tool more user-friendly.   
+Potential improvements and future directions for this project include:  
+	1	Hyperparameter Tuning: Integrating tools like Optuna or Ray Tune to find the optimal hyperparameters for training.  
+	2	Expanded Model Comparison: Including newer architectures like DeBERTa, ELECTRA, or XLNet in the metrics.py comparison script.  
+	3	Web Interface: Building a simple front-end with Streamlit or Gradio to make the sarcasm prediction tool more user-friendly.   
 
