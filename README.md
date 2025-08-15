@@ -45,7 +45,7 @@ RoBERTa-Sarcasm-Project/
 
 **Getting Started**  
 **- Requirements**  
-		• Python 3.8+  
+		• Python 3  
 		• Git  
 
 **- Installation & Setup**  
